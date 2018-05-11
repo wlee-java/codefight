@@ -10,17 +10,18 @@ public class FirstDuplicate {
 		int[] a = { 2, 3, 3, 1, 5, 2 };
 		FirstDuplicate s = new FirstDuplicate();
 		System.out.println(s.firstDuplicate(a));
+		
 	}
 
 	int firstDuplicate(int[] a) {
-		Set<Integer> found = new HashSet<Integer>();
+		Set<Integer> foundIt = new HashSet<Integer>();
 		int returnVal = -1;
 		for (int i = 0; i < a.length; i++) {
-			if (found.contains(a[i])) {
+			if (foundIt.contains(a[i])) {
 				returnVal = a[i];
 				break;
 			} else {
-				found.add(a[i]);
+				foundIt.add(a[i]);
 			}
 		}
 		return returnVal;
