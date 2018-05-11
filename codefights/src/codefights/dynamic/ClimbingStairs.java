@@ -6,6 +6,8 @@ public class ClimbingStairs {
 
 		ClimbingStairs s = new ClimbingStairs();
 		System.out.println(s.climbingStairs(3));
+		System.out.println("Do nothing");
+
 
 	}
 
