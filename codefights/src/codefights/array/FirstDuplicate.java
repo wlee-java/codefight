@@ -10,7 +10,9 @@ public class FirstDuplicate {
 		int[] a = { 2, 3, 3, 1, 5, 2 };
 		FirstDuplicate s = new FirstDuplicate();
 		System.out.println(s.firstDuplicate(a));
-		
+
+		s.doNothing();
+
 	}
 
 	int firstDuplicate(int[] a) {
@@ -25,6 +27,11 @@ public class FirstDuplicate {
 			}
 		}
 		return returnVal;
+	}
+	
+	public void doNothing() {
+		
+		System.out.println("Do Nothing");
 	}
 
 }
